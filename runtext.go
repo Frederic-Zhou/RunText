@@ -19,7 +19,7 @@ func main() {
 	ignore := flag.Int("i", 0, "忽略的行数，默认不忽略")
 	fromEncoding := flag.String("ef", "utf-8", "文档的编码，默认'utf-8'")
 	toEncoding := flag.String("et", "utf-8", "欲转换为的编码，默认'utf-8'")
-	cmd := flag.String("cmd", "", "外部命令，没一行读取完毕后执行的命令，会将行内容传递给命令作为参数，默认无命令")
+	cmd := flag.String("cmd", "", "外部命令，每一行读取完毕后执行的命令，会将行内容传递给命令作为参数，默认无命令")
 
 	flag.Parse()
 
