@@ -11,7 +11,6 @@ import (
 )
 
 func main() {
-
 	path := flag.String("p", "", "*(必要) 文件路径")
 	count := flag.Int("c", 0, "读取行数,默认为0，代表读取所有行")
 	substr := flag.String("s", "", "搜索内容，默认搜索全部")
